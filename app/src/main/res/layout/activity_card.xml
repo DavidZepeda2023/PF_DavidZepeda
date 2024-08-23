@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Pacientescard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073">
+
+        <TextView
+            android:id="@+id/lbnumhabitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Número de Habitación:"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtnumhab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Número de Habitación"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbnumhabitacion"
+            app:layout_constraintTop_toTopOf="@+id/lbnumhabitacion" />
+
+        <TextView
+            android:id="@+id/lbfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Fecha de Ingreso:"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbnumhabitacion" />
+
+        <TextView
+            android:id="@+id/txtfechaing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Fecha de Ingreso"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbfecha"
+            app:layout_constraintTop_toTopOf="@+id/lbfecha" />
+
+        <TextView
+            android:id="@+id/lbhora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Hora de aplicación:"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbfecha" />
+
+        <TextView
+            android:id="@+id/txthoraapl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Hora de Aplicación"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbhora"
+            app:layout_constraintTop_toTopOf="@+id/lbhora" />
+
+        <TextView
+            android:id="@+id/lbnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Nombre:"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbhora" />
+
+        <TextView
+            android:id="@+id/txtnombrepaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Nombre del Paciente"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbnombre"
+            app:layout_constraintTop_toTopOf="@+id/lbnombre" />
+
+        <TextView
+            android:id="@+id/lbapellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Apellido: "
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtnombrepaciente" />
+
+        <TextView
+            android:id="@+id/txtapellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Apellido del Paciente"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbapellido"
+            app:layout_constraintTop_toTopOf="@+id/lbapellido" />
+
+        <TextView
+            android:id="@+id/lbedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Edad: "
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtapellido" />
+
+        <TextView
+            android:id="@+id/txtedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Edad del Paciente"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbedad"
+            app:layout_constraintTop_toTopOf="@+id/lbedad" />
+
+        <TextView
+            android:id="@+id/lbenfermedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Enfermedad: "
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtedad" />
+
+        <TextView
+            android:id="@+id/txtenfermedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Enfermedad del Paciente"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbenfermedad"
+            app:layout_constraintTop_toTopOf="@+id/lbenfermedad" />
+
+        <TextView
+            android:id="@+id/lbumcam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Número de Cama: "
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtenfermedad" />
+
+        <TextView
+            android:id="@+id/txtnumcam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Número de Cama"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbumcam"
+            app:layout_constraintTop_toTopOf="@+id/lbumcam" />
+
+        <TextView
+            android:id="@+id/lbmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Medicamentos Asignados:"
+            android:textColor="#00BCD4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtnumcam" />
+
+        <TextView
+            android:id="@+id/txtmedasig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Medicamentos Asignados"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/lbmed"
+            app:layout_constraintTop_toTopOf="@+id/lbmed" />
+
+        <ImageView
+            android:id="@+id/btnactualizar"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="47dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/actualizar" />
+
+        <ImageView
+            android:id="@+id/btnborrar"
+            android:layout_width="36dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnactualizar"
+            app:srcCompat="@drawable/borrar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
